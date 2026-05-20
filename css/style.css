@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* =========================================
+GLOBAL STYLES
+========================================= */
+
+* {
+    font-family: "League Spartan", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+/* =========================================
+NAVBAR
+========================================= */
+
+.navbar {
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    height: 10vh;
+}
+
+.navbar-brand img {
+    width: 120px;
+}
+
+.navbar-nav .nav-link {
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-left: 15px;
+    padding-bottom: 1em;
+    position: relative;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #088178;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #088178;
+}
+
+/* =========================================
+HERO SECTION
+========================================= */
+
+.hero-section {
+    background-image: url("../images/hero4.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h4 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero-section h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #088178;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: #465b52;
+}
+
+.shop-btn {
+    background-image: url("../images/button.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    width: 220px;
+    height: 60px;
+    color: #088178;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* =========================================
+FEATURE SECTION
+========================================= */
+
+.feature-card {
+
+    border: 1px solid #cce7d0;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    background: white;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+
+    box-shadow:
+        10px 10px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.feature-card h6 {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #088178;
+    background: #fddde4;
+}
+
+/* Different Background Colors */
+
+.row .col-6:nth-child(2) .feature-card h6 {
+    background-color: #cdebbc;
+}
+
+.row .col-6:nth-child(3) .feature-card h6 {
+    background-color: #d1e8f2;
+}
+
+.row .col-6:nth-child(4) .feature-card h6 {
+    background-color: #cdd4f8;
+}
+
+.row .col-6:nth-child(5) .feature-card h6 {
+    background-color: #f6dbf6;
+}
+
+.row .col-6:nth-child(6) .feature-card h6 {
+    background-color: #fff2e5;
+}
+
+/* =========================================
+PRODUCT SECTION
+========================================= */
+
+.product-section h1,
+.product-section p {
+    text-align: center;
+}
+
+.product-card {
+    border: 1px solid #ebebeb;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card .card-body span {
+    color: #969696;
+    font-size: 14px;
+}
+
+.product-card .card-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.stars {
+    color: #e6ae2c;
+}
+
+.product-price {
+    color: #088178;
+    font-weight: 700;
+}
+
+.buy-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================================
+OFFER BANNER
+========================================= */
+
+.offer-banner {
+    background-image: url("../images/banner/b2.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 40vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.offer-banner h4 {
+    color: white;
+}
+
+.offer-banner h2 {
+    padding: 15px 0;
+}
+
+/* =========================================
+NEWSLETTER
+========================================= */
+
+.newsletter-section {
+    background-color: #041e42;
+    background-image: url("../images/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+}
+
+.newsletter-section h3 {
+    font-size: 2rem;
+}
+
+.newsletter-section p {
+    color: #b9b9b9;
+}
+
+.newsletter-section span {
+    color: #d8b61d;
+}
+
+.newsletter-section .form-control {
+    height: 55px;
+}
+
+.newsletter-section .btn {
+    height: 55px;
+    background: #088178;
+    border: none;
+}
+
+/* =========================================
+FOOTER
+========================================= */
+
+.footer-section {
+    background: #ececec;
+}
+
+.footer-section h5 {
+    margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #666;
+}
+
+.footer-section a:hover {
+    color: #088178;
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.download-img {
+    border: 1px solid #08817969;
+    border-radius: 8px;
+}
+
+/* =========================================
+RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 992px) {
+
+    .hero-section h2 {
+        font-size: 3rem;
+    }
+
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        min-height: 70vh;
+        text-align: center;
+    }
+
+    .hero-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .offer-banner {
+        padding: 20px;
+    }
+
+    .banner-box,
+    .small-banner {
+        margin-bottom: 20px;
+    }
+
+    .newsletter-section {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero-section {
+        min-height: 60vh;
+        padding: 20px;
+    }
+
+    .hero-section h4 {
+        font-size: 1.2rem;
+    }
+
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+    }
+
+    .shop-btn {
+        width: 180px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .product-section h1 {
+        font-size: 2rem;
+    }
+
+    .offer-banner h2 {
+        font-size: 1.8rem;
+    }
+
+    .newsletter-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
