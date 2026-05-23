@@ -312,6 +312,23 @@ FOOTER
     border-radius: 8px;
 }
 
+.error-message {
+
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+
+}
+
+.input-error {
+    border: 2px solid red;
+}
+
+.input-success {
+    border: 2px solid green;
+}
+
 /* =========================================
 RESPONSIVE DESIGN
 ========================================= */

@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Cara Ecommerce</title>
@@ -11,44 +13,61 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <!-- Header Section with NavBar component-->
+
+    <!-- NAVBAR -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3">
 
         <div class="container">
 
             <a class="navbar-brand home-link" href="#">
+
                 <img src="images/logo.png" alt="logo">
+
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
-
-
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
+
                         <a class="nav-link active home-link" href="#">
+
                             Home
+
                         </a>
+
                     </li>
 
-
                     <li class="nav-item">
-                        <a class="nav-link admin-link" href="#" id="admin-link">
+
+                        <a class="nav-link" href="#" id="adminLink">
+
                             Admin
+
                         </a>
+
+                    </li>
+
                 </ul>
 
             </div>
@@ -56,12 +75,14 @@
         </div>
 
     </nav>
-    <!-- Header section ends here-->
 
-    <section class="user-section" id="user-section">
+    <!-- USER SECTION -->
 
-        <!-- Hero Section -->
-        <section class="container-fluid text-start text-md-start py-5 hero-section">
+    <section id="user-section">
+
+        <!-- HERO SECTION -->
+
+        <section class="container-fluid py-5 hero-section">
 
             <div class="container">
 
@@ -76,18 +97,21 @@
                 </h1>
 
                 <p>
-                    save more coupons & up to 70% off!
+                    Save more coupons & up to 70% off!
                 </p>
 
                 <button class="btn btn-success btn-lg">
+
                     Shop Now
+
                 </button>
 
             </div>
 
         </section>
 
-        <!-- features section starts here -->
+        <!-- FEATURE SECTION -->
+
         <section class="container py-5">
 
             <div class="row g-4 text-center justify-content-center">
@@ -105,6 +129,7 @@
                     </div>
 
                 </div>
+
                 <div class="col-6 col-md-4 col-lg-2">
 
                     <div class="card feature-card p-3 h-100">
@@ -118,6 +143,7 @@
                     </div>
 
                 </div>
+
                 <div class="col-6 col-md-4 col-lg-2">
 
                     <div class="card feature-card p-3 h-100">
@@ -132,51 +158,11 @@
 
                 </div>
 
-                <div class="col-6 col-md-4 col-lg-2">
-
-                    <div class="card feature-card p-3 h-100">
-
-                        <img src="images/features/f4.png" class="img-fluid">
-
-                        <h6 class="mt-3">
-                            Promotions
-                        </h6>
-
-                    </div>
-
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-
-                    <div class="card feature-card p-3 h-100">
-
-                        <img src="images/features/f5.png" class="img-fluid">
-
-                        <h6 class="mt-3">
-                            Happy Sell
-                        </h6>
-
-                    </div>
-
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-2">
-
-                    <div class="card feature-card p-3 h-100">
-
-                        <img src="images/features/f1.png" class="img-fluid">
-
-                        <h6 class="mt-3">
-                            24/7 Support
-                        </h6>
-
-                    </div>
-
-                </div>
-
             </div>
 
         </section>
-        <!-- features section ends here -->
+
+        <!-- PRODUCTS SECTION -->
 
         <section class="container py-5">
 
@@ -190,15 +176,19 @@
 
             </div>
 
-            <section class="row g-4" id="products-container">
+            <div class="row g-4" id="products-container">
 
-            </section>
+            </div>
+
         </section>
+
     </section>
+
+    <!-- ADMIN SECTION -->
 
     <section class="container py-5" id="admin-section" style="display: none;">
 
-        <!-- Page Heading -->
+        <!-- PAGE TITLE -->
 
         <div class="text-center mb-5">
 
@@ -212,7 +202,7 @@
 
         </div>
 
-        <!-- Add Product Form -->
+        <!-- ADD PRODUCT FORM -->
 
         <div class="card shadow-sm p-4 mb-5">
 
@@ -224,71 +214,91 @@
 
                 <div class="row">
 
-                    <!-- Product Name -->
+                    <!-- PRODUCT NAME -->
 
                     <div class="col-md-6 mb-3">
 
                         <label class="form-label">
+
                             Product Name
+
                         </label>
 
                         <input type="text" class="form-control" id="name" placeholder="Enter product name">
 
+                        <span class="error-message" id="name-error"></span>
+
                     </div>
 
-                    <!-- Brand -->
+                    <!-- BRAND -->
 
                     <div class="col-md-6 mb-3">
 
                         <label class="form-label">
+
                             Brand
+
                         </label>
 
                         <input type="text" class="form-control" id="brand" placeholder="Enter brand name">
 
+                        <span class="error-message" id="brand-error"></span>
+
                     </div>
 
-                    <!-- Price -->
+                    <!-- PRICE -->
 
                     <div class="col-md-4 mb-3">
 
                         <label class="form-label">
+
                             Price
+
                         </label>
 
                         <input type="number" class="form-control" id="price" placeholder="Enter price">
 
+                        <span class="error-message" id="price-error"></span>
+
                     </div>
 
-                    <!-- Rating -->
+                    <!-- RATING -->
 
                     <div class="col-md-4 mb-3">
 
                         <label class="form-label">
+
                             Rating
+
                         </label>
 
                         <input type="number" step="0.1" class="form-control" id="rating" placeholder="Enter rating">
 
+                        <span class="error-message" id="rating-error"></span>
+
                     </div>
 
-                    <!-- Image -->
+                    <!-- IMAGE -->
 
                     <div class="col-md-4 mb-3">
 
                         <label class="form-label">
+
                             Image URL
+
                         </label>
 
-                        <input type="text" class="form-control" id="image" placeholder="images/f11.jpg">
+                        <input type="text" class="form-control" id="image" placeholder="images/products/f11.jpg">
+
+                        <span class="error-message" id="image-error"></span>
 
                     </div>
 
                 </div>
 
-                <!-- Buttons -->
+                <!-- BUTTONS -->
 
-                <button type="submit" class="btn btn-success">
+                <button type="submit" class="btn btn-success" id="submit-btn" disabled>
 
                     Add Product
 
@@ -304,51 +314,48 @@
 
         </div>
 
-        <!-- Products Table -->
+        <!-- PRODUCTS TABLE -->
 
         <div class="card shadow-sm p-4">
 
             <div class="d-flex justify-content-between align-items-center mb-4">
 
                 <h3>
+
                     Existing Products
+
                 </h3>
 
                 <span class="badge bg-dark">
-                    Total: <span id="productsCount">0</span>
+
+                    Total:
+                    <span id="productsCount">0</span>
+
                 </span>
 
             </div>
 
             <div class="table-responsive">
 
-                <table class="table table-dark table-hover align-middle" ">
-    
-                        <thead>
-    
-                            <tr>
-    
-                                <th>ID</th>
-    
-                                <th>Image</th>
-    
-                                <th>Name</th>
-    
-                                <th>Brand</th>
-    
-                                <th>Price</th>
-    
-                                <th>Rating</th>
-    
-                                <th>Actions</th>
-    
-                            </tr>
-    
-                        </thead>
-    
-                        <tbody id="products-table-body">
+                <table class="table table-dark table-hover align-middle">
 
+                    <thead>
 
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Brand</th>
+                            <th>Price</th>
+                            <th>Rating</th>
+                            <th>Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="products-table-body">
 
                     </tbody>
 
@@ -360,28 +367,160 @@
 
     </section>
 
+    <!-- UPDATE PRODUCT MODAL -->
+
+    <div class="modal fade" id="updateProductModal" tabindex="-1">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+
+                        Update Product
+
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <form id="update-product-form">
+
+                        <input type="hidden" id="update-id">
+
+                        <div class="row">
+
+                            <!-- NAME -->
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+
+                                    Product Name
+
+                                </label>
+
+                                <input type="text" class="form-control" id="update-name">
+
+                            </div>
+
+                            <!-- BRAND -->
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+
+                                    Brand
+
+                                </label>
+
+                                <input type="text" class="form-control" id="update-brand">
+
+                            </div>
+
+                            <!-- PRICE -->
+
+                            <div class="col-md-4 mb-3">
+
+                                <label class="form-label">
+
+                                    Price
+
+                                </label>
+
+                                <input type="number" class="form-control" id="update-price">
+
+                            </div>
+
+                            <!-- RATING -->
+
+                            <div class="col-md-4 mb-3">
+
+                                <label class="form-label">
+
+                                    Rating
+
+                                </label>
+
+                                <input type="number" class="form-control" id="update-rating">
+
+                            </div>
+
+                            <!-- IMAGE -->
+
+                            <div class="col-md-4 mb-3">
+
+                                <label class="form-label">
+
+                                    Image URL
+
+                                </label>
+
+                                <input type="text" class="form-control" id="update-image">
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+
+                        Close
+
+                    </button>
+
+                    <button class="btn btn-success" id="update-product-btn">
+
+                        Update Product
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JS FILES -->
 
 
+    <script src="js/data/product-data.js"></script>
+
+    <script src="js/service/product-service.js"></script>
 
 
-    <script src=" js/index.js">
-    </script>
+    <script src="js/validation/validation-rules.js"></script>
 
+    <script src="js/validation/validation-util.js"></script>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
+    <script src="js/ui/user-ui.js"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
--->
+    <script src="js/ui/admin-ui.js"></script>
+
+    <script src="js/ui/navigation-ui.js"></script>
+
+    <script src="js/controller/product-controller.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

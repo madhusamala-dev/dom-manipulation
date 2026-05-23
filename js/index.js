@@ -99,67 +99,14 @@ adminLink.addEventListener("click", (event) => {
   //alert("Admin link is clicked !");
   adminSection.style.display = "block";
   userSection.style.display = "none";
-  displayProductsInProductsTable();
+  displayAdminPage();
 });
 
 //product container element
 
-let productsHtmlData = "";
-
-products.forEach((product) => {
-  productsHtmlData += `
-
-<div class="col-sm-6 col-md-4 col-lg-3 ">
-
-                <div class="card h-100 shadow-sm product-card">
-
-                    <img src="${product.image}" class="card-img-top">
-
-                    <div class="card-body">
-
-                        <span class="text-muted">
-                            ${product.brand}
-                        </span>
-
-                        <h5 class="card-title">
-                            ${product.name}
-                        </h5>
-
-                        <div class="text-warning">
-
-                            <i class="fa-solid fa-star"></i> <span>${product.rating}</span>
-                            
-
-                        </div>
-
-                        <div class="d-flex justify-content-between align-items-center mt-3">
-
-                            <h5 class="text-success">
-                                $${product.price}
-                            </h5>
-
-                            <button class="btn btn-success">
-
-                                <i class="fa-solid fa-cart-shopping"></i>
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>`;
-});
-console.log("product container html data ", productsHtmlData);
-
-productsContainer.innerHTML = productsHtmlData;
-
 function displayProductsInProductsTable() {
   productsCount.textContent = products.length;
-
   let productsTableData = "";
-
   products.forEach((product) => {
     productsTableData += `            
 
@@ -223,4 +170,65 @@ function displayProductsInProductsTable() {
   });
   console.log("table data : ", productsTableData);
   productsTableBody.innerHTML = productsTableData;
+}
+
+function displayAdminPage() {
+  displayProductsInProductsTable();
+}
+function displayUserPage() {
+  adminSection.style.display = "none";
+  userSection.style.display = "block";
+  displayProducts();
+}
+function displayProducts() {
+  let productsHtmlData = "";
+
+  products.forEach((product) => {
+    productsHtmlData += `
+
+<div class="col-sm-6 col-md-4 col-lg-3 ">
+
+                <div class="card h-100 shadow-sm product-card">
+
+                    <img src="${product.image}" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <span class="text-muted">
+                            ${product.brand}
+                        </span>
+
+                        <h5 class="card-title">
+                            ${product.name}
+                        </h5>
+
+                        <div class="text-warning">
+
+                            <i class="fa-solid fa-star"></i> <span>${product.rating}</span>
+                            
+
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+
+                            <h5 class="text-success">
+                                $${product.price}
+                            </h5>
+
+                            <button class="btn btn-success">
+
+                                <i class="fa-solid fa-cart-shopping"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>`;
+  });
+  //console.log("product container html data ", productsHtmlData);
+
+  productsContainer.innerHTML = productsHtmlData;
 }
