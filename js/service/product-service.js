@@ -1,7 +1,25 @@
 //CRUD operations for products
-function getProducts() {
-  return products;
+const BASE_URL = "http://localhost:3000/products";
+async function getProducts() {
+  //
+  const response = await fetch(BASE_URL);
+  if (!response.ok) {
+    if (response.status === 404) {
+      throw new Error("Requested Resource Not Found");
+    } else if (response.status === 401) {
+      throw new Error("Unauthorized Access");
+    } else if (response.status === 403) {
+      throw new Error("Forbidden Access");
+    } else if (response.status === 500) {
+      throw new Error("Internal Server Error");
+    } else {
+      throw new Error("Failed to fetch products, Please try again later");
+    }
+  }
+  return response.json();
 }
+    
+
 
 function saveProduct(product) {
   products.push(product);

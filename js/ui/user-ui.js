@@ -1,9 +1,12 @@
 const productsContainer = document.querySelector("#products-container");
 
-function displayProducts() {
+ async function displayProducts() {
   let productsHtmlData = "";
 
-  getProducts().forEach((product) => {
+  const products =  await getProducts(); //asyncronous function to fetch products from the server
+  console.log("Products in displayProducts:", products);
+
+  products.forEach((product) => {
     productsHtmlData += `
 
         <div class="col-sm-6 col-md-4 col-lg-3">

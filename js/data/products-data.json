@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "id": "3",
+      "name": "Printed Summer Shirt",
+      "brand": "Puma",
+      "price": 1800,
+      "rating": 4.7,
+      "image": "images/products/f3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Formal Office Shirt",
+      "brand": "Levis",
+      "price": 2200,
+      "rating": 4.4,
+      "image": "images/products/f4.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Checked Casual Shirt",
+      "brand": "Adidas",
+      "price": 1700,
+      "rating": 4.6,
+      "image": "images/products/f5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Oversized T-Shirt",
+      "brand": "Nike",
+      "price": 1400,
+      "rating": 4.1,
+      "image": "images/products/f6.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Classic White Shirt",
+      "brand": "Peter England",
+      "price": 2100,
+      "rating": 4.8,
+      "image": "images/products/f7.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Denim Casual Shirt",
+      "brand": "Wrangler",
+      "price": 2500,
+      "rating": 4.3,
+      "image": "images/products/f8.jpg"
+    },
+    {
+      "name": "Slim Fit Shirt1",
+      "brand": "Adidas",
+      "price": 1700,
+      "rating": 4.5,
+      "image": "images/products/f9.jpg",
+      "id": "J-3gv3y-tKQ"
+    },
+    {
+      "id": "0XieJdBb9sg",
+      "name": "Slim Fit Shirt2",
+      "brand": "Polo",
+      "price": 1800,
+      "rating": 4.9,
+      "image": "images/products/f10.jpg"
+    },
+    {
+      "id": "pXM3xlC7eDE",
+      "name": "Product 10",
+      "price": 1000,
+      "brand": "Apple",
+      "rating": 4.5,
+      "image": "images/products/f8.jpg"
+    },
+    {
+      "id": "4fbH7affgCI",
+      "name": "Product 10",
+      "price": 1000,
+      "brand": "Apple",
+      "rating": 4.5,
+      "image": "images/products/f8.jpg"
+    },
+    {
+      "id": "92u_545J9tM",
+      "name": "Product 10",
+      "price": 1000,
+      "brand": "Apple",
+      "rating": 4.5,
+      "image": "images/products/f8.jpg"
+    }
+  ]
+}
